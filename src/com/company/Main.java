@@ -19,7 +19,6 @@ public class Main
         System.out.println("time to be a");
         System.out.println("computer programmer");
         // 3.
-        // 2.
         System.out.print("It is a great");
         System.out.print(" time to be a");
         System.out.print(" computer programmer!");
