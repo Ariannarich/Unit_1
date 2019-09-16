@@ -8,7 +8,7 @@ public class TotalWithTax {
         double tax =  price * TAXRATE;
         double totalCost = tax + price;
 System.out.println("Price: $" + price);
-        System.out.println("Sales Tax: $" + tax);
+        System.out.println("Sales Tax:C$" + tax);
         System.out.print("Total: $" + totalCost);
 
 
