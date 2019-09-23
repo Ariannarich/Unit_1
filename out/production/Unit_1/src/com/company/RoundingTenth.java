@@ -12,10 +12,10 @@ import java.util.Scanner;
             input = value.nextDouble();
             double num1 = input * 10;
             double num2 = num1 + 0.5;
-          double temp2 = (int) num2;
+            double temp2 = (int) num2;
             double answer = temp2/ 10;
 
-            System.out.println( (input ) + " rounded to the nearest tenth: " + answer);
+            System.out.println( (input  ) + " rounded to the nearest tenth: " + answer);
 
         }
     }
