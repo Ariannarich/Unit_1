@@ -7,7 +7,7 @@ import java.util.Scanner;
         {
 
             System.out.print("Enter your number here: ");
-            Scanner value= new Scanner(System.in);
+            Scanner value = new Scanner(System.in);
             double input;
             input = value.nextDouble();
             double num1 = input * 10;
