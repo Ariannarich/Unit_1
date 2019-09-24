@@ -7,7 +7,8 @@ public class Printing
         // Brian, I did the three commits under the Main.Java class, i'll do a full one here as well.
         System.out.println("hElLo wOrLd");
         System.out.println("ANOTHER LINE");
-        System.out.println("This is \"Arianna's\" Computer");
+        double test = 3.75 % 3;
+        System.out.println(test);
 
         // Part one exercises start here:
 
