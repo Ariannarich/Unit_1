@@ -2,37 +2,45 @@ package com.company;
 
 import java.util.Scanner;
 
+
+/*
+Arianna Richardson
+September 24, 2019
+This program takes the whole number amount of cents inputted,
+and distributes them in the corresponding coin amounts.
+ */
 public class CorrectChange
 {
+    //Start of code
     public static void main(String[] args) {
         Scanner value = new Scanner(System.in);
         System.out.print("Please enter a whole number amount of cents: ");
-        double input = value.nextInt();
-       double temp = input / 100;
-       int dollars2 = (int) temp;
-       System.out.print(dollars2+ " dollar(s), ");
+                int input = value.nextInt(); //input specified amount here:
 
-       double quartersa = temp - dollars2;
-             double quartersb = quartersa / 25;
-             double quartersc = quartersb * 100;
-             int quart = (int)quartersc;
-        System.out.print(quart+" quarters(s), ");
+              // Code to get dollars(DOLLARS):
+                int dollars = input / 100;
+                System.out.print(dollars+ " dollar(s), ");
+                int remainder = input % 100;
+                /* (used remainder operands from dollars
+                 to get initial amount to find out quarter amount)
+                 -Used to get rest of amounts later on-
+              */
+               //QUARTERS
+                int quarter = remainder/25;
+                System.out.print(quarter+" quarters(s), ");
+                     //DIMES
+                int rem2 = remainder % 25;
+                int dime = rem2 /10;
+                System.out.print(dime+" dimes(s), ");
 
-        double dime1 =  quartersc-quart ;
-        double dime2 = dime1 / 10;
-        int dime = (int)dime2;
-        System.out.print(dime+" dimes(s), ");
-
-        double nick =  dime- dime2;
-        double nick2 = nick * 10;
-        double nick3 = nick2 / 5;
-        int nickel = (int)nick3;
-        System.out.print(nickel+" nickel(s), and ");
-
-
-        double penn = nickel-nick3;
-        int penny = (int)penn;
-        System.out.print(penny+" penny(ies).");
+                //NICKELS
+                int rem3 = remainder % 10;
+                int nickel = rem3 / 5;
+                System.out.print(nickel+" nickel(s), and ");
+               // PENNIES - did not need to use remainder formula here-
+                int penny = rem3 % 5;
+                 System.out.print(penny+" penny(ies).");
+                 //End of code
 
 
 
@@ -41,4 +49,3 @@ public class CorrectChange
 
     }
 }
-
